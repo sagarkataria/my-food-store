@@ -130,6 +130,23 @@ nav .top .contact img,nav .top .time img{
     margin-right: 1rem;
 }
 
+nav .navbar a{
+   padding: 1rem 1.5rem;
+   text-decoration: none;
+   color: var(--secondary);
+   font-family: "Raleway-Semibold";
+   transition: all .3s ease;
+}
+nav .navbar a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
+
+nav .navbar a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+
 
 
 .flex{
@@ -140,4 +157,24 @@ nav .top .contact img,nav .top .time img{
 }
 .items-center{
     align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.magic-shadow{
+    position: relative;
+    background: var(--heaven);
+}
+.magic-shadow:after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 10px;
+   background-image: url(../icons/shadow.svg);
+   bottom: -9px;
+   position: absolute;
+   background-repeat: no-repeat;
+   /* background-position: center; */
+   z-index:-1;
 }
