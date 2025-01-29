@@ -230,6 +230,8 @@ nav .navbar a:hover{
     background-repeat: no-repeat;
     /* background-position: center; */
     z-index:-1;
+    left: 50%;
+    transform: translateX(-50%);
  }
 
 .text-center{
@@ -425,6 +427,45 @@ section.about-meal p{
     margin-bottom: 3rem;
 }
 
+section.our-services{
+    background: var(--light);
+    z-index: 0;
+    position: relative;
+}
+section.our-services .card-wrapper{
+    margin-right: -2rem;
+    margin-top: 8rem;
+}
+section.our-services .services-card{
+    background: var(--heaven);
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    position: relative;
+    border-radius: 4px;
+    margin-right: 2rem;
+}
+section.our-services .services-card .icon{
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.our-services .services-card h2{
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our-services .services-card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
 .flex-1{
     flex:1;
+}
+
+.text-primary{
+    color: var(--primary);
 }
