@@ -462,10 +462,54 @@ section.our-services .services-card p{
     margin-bottom: 1rem;
 }
 
+section.big-deal .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -2rem;
+    margin-bottom: 2rem;
+}
+
+section.big-deal .timer div{
+    margin-right: 2rem;
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.big-deal .timer div span:first-child{
+   font-family: "Raleway-semibold";
+   font-size: 2.5rem;
+   color: var(--heaven);
+   margin-bottom: 0.5rem;
+}
+section.big-deal .timer div span:last-child{
+    font-family: "Raleway-medium";
+    color: var(--heaven);
+}
+
+section.big-deal{
+    background: linear-gradient(
+        rgba(35,43,56,0.9),
+        rgba(35,43,56,0.9)
+    ),url(../images/food-table.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .flex-1{
     flex:1;
 }
 
 .text-primary{
     color: var(--primary);
+}
+.text-pure{
+    color: var(--pure);
 }
